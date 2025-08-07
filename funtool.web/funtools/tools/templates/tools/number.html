@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="{% static 'css/number.css' %}">
+</head>
+<body>
+
+    <form method="get">
+        Min: <input type="number" name="min" value="1">
+        Max: <input type="number" name="max" value="4000">
+        <br>
+        <button type="submit">Generate</button>
+    </form>
+
+{% if number %}
+    <h2>Your Random Number: {{ number }}</h2>
+{% endif %}

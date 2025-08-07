@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Date Generator</title>
+    <link rel="stylesheet" href="{% static 'css/date.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Date Generator</h1>
+        
+        <form method="get">
+            <label>Start Date (YYYY-MM-DD): </label>
+            <input type="text" name="start" placeholder="2020-01-01">
+
+            <label>End Date (YYYY-MM-DD): </label>
+            <input type="text" name="end" placeholder="2025-01-01">
+
+            <button type="submit">Generate</button>
+        </form>
+
+        {% if random_date %}
+            <h2 class="result">Random Date: {{ random_date }}</h2>
+        {% elif error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

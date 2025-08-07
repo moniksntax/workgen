@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WorkGen - AI Tools Hub</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="bg-dark text-white py-1">
+    <div class="container d-flex justify-content-between">
+        <div>support@workgen.com</div>
+        <div>Welcome to WorkGen! | $ Dollar</div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="text-primary">WorkGen</h2>
+        <nav>
+            <a href="#" class="mx-2 text-dark">Home</a>
+            <a href="#" class="mx-2 text-dark">Tools</a>
+            <a href="#" class="mx-2 text-dark">Docs</a>
+            <a href="#" class="mx-2 text-dark">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="bg-light py-5 text-center">
+    <div class="container">
+        <h3 class="text-muted">Season Tools Launch</h3>
+        <h1 class="display-4 fw-bold">AI WORK GENERATOR</h1>
+        <p class="lead">Generate jobs, documents, and media with 1-click AI tools</p>
+    </div>
+</section>
+
+<!-- Tools Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Popular Tools</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Joke Generator</h5>
+                        <p class="card-text">Generate a random joke using AI humor.</p>
+                        <a href="/joke/" class="btn btn-outline-primary">Use Tool</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Number Generator</h5>
+                        <p class="card-text">Get a random number for testing or fun.</p>
+                        <a href="/number/" class="btn btn-outline-primary">Use Tool</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Date Generator</h5>
+                        <p class="card-text">Pick a random date in history or future.</p>
+                        <a href="/date/" class="btn btn-outline-primary">Use Tool</a>
+                    </div>
+                </div>
+            </div>
+  
+<!-- Footer -->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2025 WorkGen. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
